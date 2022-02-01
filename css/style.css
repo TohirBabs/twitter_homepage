@@ -4,9 +4,6 @@
     --dull-text: #738390;
 }
 /*-------------------- GENERIC ELEMENT DEFAULTS --------------------------*/
-/*-------------------- GENERIC ELEMENT STYLES --------------------------*/
-/*-------------------- UTILITIES --------------------------*/
-/*-------------------- COMPONENTS --------------------------*/
 
 *{
     margin: 0;
@@ -18,14 +15,47 @@ a{
     text-decoration: none;
 }
 
-body{
-    background-color: #1d9bf0;
-}
+
 
 button:hover,
 a:hover{
     cursor: pointer;
 }
+
+ul{
+    list-style: none;
+}
+
+button{
+    background: none;
+    border: none;
+}
+
+img{
+    display:inline-block;
+}
+
+
+/*-------------------- GENERIC ELEMENT STYLES --------------------------*/
+
+body{
+    background-color: #1d9bf0;
+}
+
+button{
+    color: white;
+    font-family: monospace;
+}
+
+
+
+
+/*-------------------- UTILITIES --------------------------*/
+
+
+/*-------------------- COMPONENTS --------------------------*/
+
+
 
 
 .content-wrap{
@@ -36,22 +66,12 @@ a:hover{
     min-width: fit-content;
     min-height: 90vh;
     margin: auto ;
-    border-top: #738390 2px solid;
+    border-top: var(--dull-text) 2px solid;
     font-family: monospace;
 }
 
 
-ul{
-    list-style: none;
-}
 
-button{
-    background: none;
-    border: none;
-    color: white;
-    font-family: monospace;
-    font-size: 20px;
-}
 
 .nav-column{
     display: flex;
@@ -155,11 +175,12 @@ button{
 }
 
 .header-info .user-name{
-    font-size: 0.72rem;
+    font-size: 0.8rem;
     line-height: 0.88rem;
 }
 
 .tweet-total{
+    font-size: 0.5rem;
     color: var(--dull-text);
 }
 .user-hero-img{
