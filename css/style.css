@@ -40,6 +40,7 @@ img{
 
 body{
     background-color: #1d9bf0;
+    font-size: 0.6rem;
 }
 
 button{
@@ -64,6 +65,7 @@ button{
     background-color: #16232c;
     color: white;
     min-width: fit-content;
+    max-width: 100vw;
     min-height: 90vh;
     margin: auto ;
     border-top: var(--dull-text) 2px solid;
@@ -74,13 +76,14 @@ button{
 
 
 .nav-column{
+    position: fixed;
     display: flex;
     flex-direction: column;
     flex: 1;
     height: 100vh;
     border-right: 1px solid #1d9bf0;
     padding-left: 6.8rem;
-    padding-right: 1rem;
+    padding-right: 2.8rem;
 }
 
 .twitter-logo{
@@ -158,6 +161,7 @@ button{
 
 
 .main-page{
+    margin-left: 18rem;
 }
 
 .page-header{
@@ -193,7 +197,7 @@ button{
 
 .hero-main img{
     position: absolute;
-    width: 5.2rem;
+    width: 6rem;
     left: 0.6rem;
     top: -2.8rem;
     border-radius: 3.2rem;
@@ -203,26 +207,30 @@ button{
 .profile-edit{
     float: right;
     margin: 0.4rem;
-    padding: 0.32rem;
-    font-size: 0.48rem;
+    padding: 0.4rem;
+    font-size: 0.5rem;
     border-radius: 0.8rem;
     border: 0.04rem solid white;
 }
 
 .hero-info{
     padding:0.6rem;
-    padding-top: 2.8rem;
+    padding-top: 3.5rem;
 }
 
 .hero .user-name{
-    font-size: 0.8rem;
+    font-size: 0.9rem;
+}
+
+.hero .user-id{
+    font-size: 0.6rem;
 }
 .user-about{
     padding: 0.4rem 0;
 }
 
 .user-info{
-    color: #738390;
+    color: var(--dull-text);
     padding-bottom: 0.28rem;
 }
 
@@ -255,13 +263,13 @@ button{
 }
 
 .nav-link{
-    font-size: 0.56rem;
+    font-size: 0.6rem;
     padding: 0.72rem 0;
     color: var(--dull-text);
 }
 
 .nav-link:hover{
-    border-bottom: 0.12rem solid #1d9bf0;
+    border-bottom: 2px solid #1d9bf0;
 }
 
 .tweet{
@@ -270,8 +278,9 @@ button{
 
 
 .tweet{
-    padding: 0.6rempx;
+    padding: 0.6rem;
     display: grid;
+    gap: 2px;
     grid-template-columns: 1fr 10fr;
     grid-template-rows: 1fr 35fr;
 }
@@ -283,7 +292,7 @@ button{
 
 .tweet__user-pic{
     grid-row: span 2;
-    width: 1.6rem;
+    width: 2rem;
     border-radius: 50%;
 }
 
@@ -339,7 +348,6 @@ button{
     margin-top: 0.2rem;
     margin-bottom: 0.6rem;
     background-color:#192734;
-    width: 12rem;
     padding: 0.4rem;
     border-radius: 2.4rem;
 }
@@ -353,6 +361,7 @@ button{
     background: transparent;
     border: none;
     font-family: monospace;
+    font-size: 0.6rem;
 }
 
 .gallery{
@@ -366,7 +375,8 @@ button{
 }
 
 .gallery img{
-    height: 3.52rem;
+    height: 4.2rem;
+    width: 4.8rem;
 }
 
 .card{
@@ -438,7 +448,15 @@ button{
 }
 
 
+@media screen and (max-width: 1000px){
+    .nav-name{
+        display: none;
+    }
 
+    .nav-column{
+        padding: 0;
+    }
+}
 
 
 
