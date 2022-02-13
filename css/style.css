@@ -1,8 +1,6 @@
 /*-------------------- CUSTOM PROPERTIES --------------------------*/
 
-:root{
-    --dull-text: #738390;
-}
+                                      
 /*-------------------- GENERIC ELEMENT DEFAULTS --------------------------*/
 
 *{
@@ -66,10 +64,9 @@ button{
     color: white;
     min-width: fit-content;
     max-width: 100vw;
-    min-height: 90vh;
     margin: auto ;
     border-top: var(--dull-text) 2px solid;
-    font-family: monospace;
+    font-family: 'Roboto Mono',  monospace;
 }
 
 
@@ -78,6 +75,7 @@ button{
 .nav-column{
     position: fixed;
     display: flex;
+    float: right;
     flex-direction: column;
     flex: 1;
     height: 100vh;
@@ -161,7 +159,7 @@ button{
 
 
 .main-page{
-    margin-left: 18rem;
+    padding-left: 8rem;
 }
 
 .page-header{
@@ -339,6 +337,7 @@ button{
 .sider{
     display: flex;
     flex-direction: column;
+    float: right;
     border-left: #1d9bf0 1px solid;
     padding-left: 1.2rem;
     padding-right: 7rem;
@@ -468,7 +467,7 @@ button{
 
 
 
-@media screen and (max-width: 420px){
+@media screen and (max-width: 450px){
     .content-wrap{
         background-color: black;
         margin: 0;
