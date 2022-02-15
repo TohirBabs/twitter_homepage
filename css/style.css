@@ -7,6 +7,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    border: 1px red solid;
 }
 
 a{
@@ -87,7 +88,7 @@ button{
 .twitter-logo{
     width: 1.84rem;
     font-size: 1.1rem;
-    padding: 0.48rem;
+    padding: 0.48rem;   
     border-radius: 1.6rem;
 }
 
@@ -203,8 +204,8 @@ button{
 }
 
 .profile-edit{
-    float: right;
-    margin: 0.4rem;
+    position: absolute;
+    right: 0.4rem;
     padding: 0.4rem;
     font-size: 0.5rem;
     border-radius: 0.8rem;
@@ -416,7 +417,7 @@ button{
     background-color: white;
     color: #16232c;
 }
-
+ 
 .suggestions>button{
     margin-top: 0.6rem;
     padding: 0.2rem;
@@ -447,7 +448,7 @@ button{
 }
 
 
-@media screen and (max-width: 1000px){
+@media screen and (max-width: 800px){
 
 
     .nav-name{
@@ -456,6 +457,18 @@ button{
 
     .nav-column{
         padding: 0;
+    }
+
+    .nav-list{
+        display: flex;
+        flex-direction: column;
+        width: fit-content;
+        padding: 0 1rem;
+    }
+
+    .nav-item{
+        display: inline-block;
+        width: fit-content;
     }
     .main-page{
         margin-left: 0;
@@ -466,16 +479,25 @@ button{
 
 
 
+@media screen and (max-width: 800px){
 
-@media screen and (max-width: 450px){
+
+}
+
+
+
+
+@media screen and (max-width: 650px){
     .content-wrap{
         background-color: black;
+        max-width: 100vw;
         margin: 0;
         border-radius: 0;
     }
 
     .main-page{
-        width: 400px;
+        width: 100vw;
+        padding-left: 0;
     }
 
     .nav-column,
@@ -485,9 +507,12 @@ button{
     }
 
     body,
-    .nav-link,
     .follow-info{
         font-size: 0.84rem;
+    }
+
+    .nav-link{
+        font-size: 0.95rem;
     }
 
     .hero .user-id{
@@ -498,10 +523,27 @@ button{
         font-size: 1.5rem;
     }
 
+    .hero-main img{
+        width: 6rem;
+        border-color: black;
+    }
+
+    .profile-edit{
+        top: 0.5rem;
+        font-size: 0.9rem;
+        border-radius: 2rem;
+    }
+
   
 
     .user-hero-img{
-        width: 400px;
+        overflow: hidden;
+        width: 100vw;
+        max-width: 100vw;
+    }
+
+    .user-info{
+        font-size: 0.8rem;
     }
 
     .tweet{
@@ -513,21 +555,21 @@ button{
 
     .tweet__user-pic{
         width: 50px;
-        position: absolute;
-        top: 15px;
-        left: 15px;
+    }
+
+    .tweet-header{
+        display: flex;
+        padding: 0.5rem;
     }
 
     .tweet__user-info{
-        position: absolute;
-        top: 17px;
-        left: 80px;
         display: flex;
         flex-direction: column;
+        justify-content: center;
     }
 
     .tweet__user-id{
-        margin-right: 140px;
+        margin-right: 7rem;
     }
 
     .tweet__menu-toggle-desktop{
@@ -544,12 +586,13 @@ button{
 
 
     .hashtags{
-        padding: 15px;
+        padding: 0.5rem;
+        padding-top: 0;
         line-height: 0.8rem;
     }
 
     .tweet__content{
-        margin-top: 60px;
+        margin-top: 0px;
     }
 
     .tweet__img{
