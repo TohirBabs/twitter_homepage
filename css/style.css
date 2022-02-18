@@ -7,7 +7,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    border: 1px red solid;
 }
 
 a{
@@ -60,7 +59,7 @@ button{
 
 .content-wrap{
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 0.5fr 1.2fr 0.7fr;
     background-color: #16232c;
     color: white;
     min-width: fit-content;
@@ -76,15 +75,11 @@ button{
 .nav-column{
     position: fixed;
     display: flex;
-    float: right;
     flex-direction: column;
-    flex: 1;
     height: 100vh;
-    border-right: 1px solid #1d9bf0;
-    padding-left: 6.8rem;
     padding-right: 2.8rem;
 }
-
+  
 .twitter-logo{
     width: 1.84rem;
     font-size: 1.1rem;
@@ -101,14 +96,14 @@ button{
 
 .nav-list button{
     font-size: 0.75rem;
-    padding: 0.6rem;
+    padding: 0.6rem 0.2rem;
     border-radius: 1.2rem;
 }
 
 .nav-list button:hover,
 .twitter-logo:hover,
 .account:hover{
-    cursor: pointer;
+    cursor: pointer; 
     background-color: #192734;
 }
 
@@ -160,7 +155,6 @@ button{
 
 
 .main-page{
-    padding-left: 8rem;
 }
 
 .page-header{
@@ -336,12 +330,14 @@ button{
 
 
 .sider{
+    float: right;
+    position: fixed;
+    right: 0;
     display: flex;
     flex-direction: column;
     float: right;
-    border-left: #1d9bf0 1px solid;
-    padding-left: 1.2rem;
-    padding-right: 7rem;
+    padding-left: 0.2rem;
+    padding-right: 0.2rem;
 }
 
 .search-tab{
@@ -448,7 +444,7 @@ button{
 }
 
 
-@media screen and (max-width: 800px){
+@media screen and (max-width: 750px){
 
 
     .nav-name{
